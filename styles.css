@@ -316,6 +316,12 @@ main {
     margin-top: 2rem;
 }
 
+.release-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .release-card {
     display: flex;
     align-items: center;
@@ -327,10 +333,16 @@ main {
     transition: all 0.3s ease;
 }
 
+.release-link:hover .release-card,
 .release-card:hover {
     background: rgba(255, 255, 255, 0.05);
     border-color: rgba(0, 255, 255, 0.3);
     transform: translateX(5px);
+}
+
+.release-card--soon {
+    border-color: rgba(0, 255, 255, 0.25);
+    background: rgba(0, 255, 255, 0.04);
 }
 
 .release-number {
@@ -358,6 +370,12 @@ main {
     justify-content: center;
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
+}
+
+.release-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .release-info {
